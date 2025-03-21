@@ -1,0 +1,8 @@
+streamlit
+langchain-core
+langchain-community
+faiss-cpu
+langchain-huggingface
+langchain-groq
+langchain
+chatsynth_vanshajr
