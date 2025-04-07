@@ -30,7 +30,7 @@ def chat_assistant():
     # Load FAISS index only once and store it in session state
     if "faiss_vectors" not in st.session_state:
         try:
-            embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+            embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
             st.session_state.faiss_vectors = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
         except Exception as e:
             st.error(f"Error loading FAISS index: {str(e)}")
