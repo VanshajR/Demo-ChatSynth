@@ -1,4 +1,6 @@
 streamlit
+accelerate
+transformers
 langchain-core
 langchain-community
 faiss-cpu
